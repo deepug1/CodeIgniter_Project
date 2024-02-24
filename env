@@ -14,7 +14,7 @@
 # ENVIRONMENT
 #--------------------------------------------------------------------
 
-# CI_ENVIRONMENT = production
+CI_ENVIRONMENT = development
 
 #--------------------------------------------------------------------
 # APP
@@ -30,13 +30,13 @@
 # DATABASE
 #--------------------------------------------------------------------
 
-# database.default.hostname = localhost
-# database.default.database = ci4
-# database.default.username = root
-# database.default.password = root
-# database.default.DBDriver = MySQLi
-# database.default.DBPrefix =
-# database.default.port = 3306
+database.default.hostname = localhost
+database.default.database = upskill
+database.default.username = root
+database.default.password = 
+database.default.DBDriver = MySQLi
+database.default.DBPrefix =
+database.default.port = 3306
 
 # database.tests.hostname = localhost
 # database.tests.database = ci4_test
@@ -72,18 +72,18 @@
 # contentsecuritypolicy.scriptNonceTag = '{csp-script-nonce}'
 # contentsecuritypolicy.autoNonce = true
 
-#--------------------------------------------------------------------
+#------------------------------------------------------------------
 # COOKIE
-#--------------------------------------------------------------------
+#------------------------------------------------------------------
 
-# cookie.prefix = ''
-# cookie.expires = 0
-# cookie.path = '/'
-# cookie.domain = ''
-# cookie.secure = false
-# cookie.httponly = false
-# cookie.samesite = 'Lax'
-# cookie.raw = false
+cookie.prefix = ''
+cookie.expires = 0
+cookie.path = '/'
+cookie.domain = ''
+cookie.secure = false
+cookie.httponly = false
+cookie.samesite = 'Lax'
+cookie.raw = false
 
 #--------------------------------------------------------------------
 # ENCRYPTION
@@ -122,13 +122,13 @@
 # SESSION
 #--------------------------------------------------------------------
 
-# session.driver = 'CodeIgniter\Session\Handlers\FileHandler'
-# session.cookieName = 'ci_session'
-# session.expiration = 7200
-# session.savePath = null
-# session.matchIP = false
-# session.timeToUpdate = 300
-# session.regenerateDestroy = false
+session.driver = 'CodeIgniter\Session\Handlers\FileHandler'
+session.cookieName = 'ci_session'
+session.expiration = 7200
+session.savePath = null
+session.matchIP = false
+session.timeToUpdate = 300
+session.regenerateDestroy = false
 
 #--------------------------------------------------------------------
 # LOGGER
