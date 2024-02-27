@@ -83,6 +83,5 @@ public function city()
         $output2 .= "<option value='$city->name'>$city->name</option>";
     }
     echo json_encode($output2);
-    // echo json_encode($stateData);
 }
 }

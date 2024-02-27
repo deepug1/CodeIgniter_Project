@@ -13,8 +13,6 @@ class SelectModel extends Model
         $builder->select("*");
         $builder->where($where);
         $query = $builder->get();
-        // echo $this->db->getLastQuery();
-        // die();
         return $query->getResult();
     }
 }

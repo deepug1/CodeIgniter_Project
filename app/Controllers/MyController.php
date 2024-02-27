@@ -29,32 +29,20 @@ class MyController extends Controller
 
         
 
-            // Run validation
+            
             if ($validation->withRequest($this->request)->run()) {
-                // Validation passed, get the posted form data
              $file = $this->request->getFile('photograph');
-            // Get the posted form data
             $formData = $this->request->getPost();
 
-            // Check if 'photograph' field exists in form data
-
-
-
-
-
-            // Initialize your model
             $mainModel = new MainModel();
 
-            // Insert the data into the database
             $mainModel->insert($formData);
 
-             // Store the inserted ID in the session as employee_id
             session()->set('employee_id', $formData);
 
-            // Optionally, you can redirect to another page after successful insertion
+    
             return redirect()->to('/')->with('success', 'Data inserted successfully');
             }else {
-                // Validation failed, pass the errors to the view
                 $data['validation'] = $validation;
                 return view('Main_form', $data);
             }

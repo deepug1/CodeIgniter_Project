@@ -22,9 +22,6 @@
                 <?php  } ?>
             </select>
         </div>
-
-
-
         <div class="col-md-4">
             <label for="inputState" class="form-label">State</label>
             <select name="State" class="fw-lighter form-select border-1 border-dark rounded" id="stateID" onchange="fetchCityData(this.value)">
