@@ -15,5 +15,6 @@ $routes->get('/search_data', 'SearchController::index');
 $routes->post('/search', 'SearchController::search');
 $routes->get('/profileview', 'SearchController::ProfileView');
 $routes->get('/update-profile', 'SearchController::updateProfile');
+$routes->post('/update-profile', 'SearchController::updateProfile');
 $routes->post('/delete-profile', 'SearchController::deleteProfile');
 
