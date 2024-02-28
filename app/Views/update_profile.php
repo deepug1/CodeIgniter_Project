@@ -3,12 +3,13 @@
 
 <section class="container my-3 bg-dark w-50 text-light p-2">
     <div class="h1">Insert Data</div>
-    <form class="row g-3 p-3" method="post" enctype="multipart/form-data" action="/MyController/insert">
+    <form class="row g-3 p-3" method="post" enctype="multipart/form-data" action="/save-updated-profile/<?= esc($eid) ?>">
         <div class="col-md-4">
             <label for="fname" class="form-label">First Name</label>
             <input type="text" class="form-control" id="fname" placeholder="Enter your first name" name="fname" value="<?= esc($employee['fname']) ?>">
             <span class="text-danger"><?= service('validation')->showError('fname'); ?></span>
         </div>
+        <input type="hidden" name="eid" value="<?= esc($employee['eid']) ?>">
 
         <div class="col-md-4">
             <label for="mname" class="form-label">Middle Name</label>
