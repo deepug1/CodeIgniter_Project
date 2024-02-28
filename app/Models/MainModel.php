@@ -7,7 +7,7 @@ use CodeIgniter\Controller;
 class MainModel extends Model
 {
     protected $table = 'employee';
-    protected $primarykey = 'id';
+    protected $primaryKey = 'eid';
     protected $allowedFields = [
         'fname',
         'mname',
